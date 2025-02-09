@@ -4,31 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nepal Vote Match</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
+    <link rel="stylesheet" href="style.css">  </head>
 <body>
-    <div id="landingPage" class="page">
-        <h1>Welcome to Nepal Vote Match</h1>
-        <button id="startQuizButton" class="button">Start Quiz</button>
-    </div>
-    
-    <div id="quizPage" class="page" style="display: none;">
-        <h2>Question <span id="questionNumber"></span></h2>
-        <h3 id="questionSummary"></h3>
-        <p id="questionText"></p>
-        <div class="button-group">
-            <button id="agreeButton" class="button">Agree</button>
-            <button id="neutralButton" class="button">Neutral</button>
-            <button id="disagreeButton" class="button">Disagree</button>
-        </div>
-    </div>
-    
-    <div id="resultPage" class="page" style="display: none;">
-        <h2>Your Results</h2>
-        <ul id="resultList"></ul>
-        <button id="restartButton" class="button">Restart Quiz</button>
+
+    <div class="container" id="landingPage">
+        <h1>Nepal Vote Match</h1>
+        <h2>General Elections 2025</h2>
+        <p>Answer political questions and find out which party matches your views!</p>
+        <button id="startQuizButton">Start</button>
     </div>
 
-    <script src="script.js"></script>
-</body>
+    <div class="container" id="quizPage" style="display: none;">
+        <h2 id="questionNumber"></h2>
+        <h3 id="questionSummary"></h3>
+        <p id="questionText"></p>
+        <button id="agreeButton">Agree</button>
+        <button id="neutralButton">Neutral</button>
+        <button id="disagreeButton">Disagree</button>
+    </div>
+
+    <div class="container" id="resultPage" style="display: none;">
+        <h2>Your Results</h2>
+        <ul id="resultList"></ul>
+        <button id="restartButton">Restart</button>
+    </div>
+
+    <script src="script.js"></script> </body>
 </html>
