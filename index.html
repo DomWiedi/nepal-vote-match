@@ -7,31 +7,27 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="language-switcher">
-        <button id="en">English</button>
-        <button id="ne">नेपाली</button>
-    </div>
 
     <div class="container" id="landingPage">
-        <h1 data-en="Nepal Vote Match" data-ne="नेपाल भोट मिलान">Nepal Vote Match</h1>
-        <h2 data-en="General Elections 2025" data-ne="आम निर्वाचन २०२५">General Elections 2025</h2>
-        <p data-en="Answer political questions and find out which party matches your views!" data-ne="राजनीतिक प्रश्नहरूको जवाफ दिनुहोस् र कुन पार्टीले तपाइँको विचारसँग मेल खान्छ पत्ता लगाउनुहोस्!">Answer political questions and find out which party matches your views!</p>
-        <button id="startQuizButton" data-en="Start" data-ne="सुरु गर्नुहोस्">Start</button>
+        <h1>Nepal Vote Match</h1>
+        <h2>General Elections 2025</h2>
+        <p>Answer political questions and find out which party matches your views!</p>
+        <button id="startQuizButton">Start</button>
     </div>
 
     <div class="container" id="quizPage" style="display: none;">
         <h2 id="questionNumber"></h2>
         <h3 id="questionSummary"></h3>
         <p id="questionText"></p>
-        <button id="agreeButton" data-en="Agree" data-ne="सहमत">Agree</button>
-        <button id="neutralButton" data-en="Neutral" data-ne="तटस्थ">Neutral</button>
-        <button id="disagreeButton" data-en="Disagree" data-ne="असहमत">Disagree</button>
+        <button id="agreeButton">Agree</button>
+        <button id="neutralButton">Neutral</button>
+        <button id="disagreeButton">Disagree</button>
     </div>
 
     <div class="container" id="resultPage" style="display: none;">
         <h2>Your Results</h2>
         <ul id="resultList"></ul>
-        <button id="restartButton" data-en="Restart" data-ne="पुनः सुरु गर्नुहोस्">Restart</button>
+        <button id="restartButton">Restart</button>
     </div>
 
     <script src="script.js"></script>
