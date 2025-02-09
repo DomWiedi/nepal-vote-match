@@ -1,17 +1,17 @@
 const questions = [
-    { "summary": { "en": "Constitution", "ne": "संविधान" }, "text": { "en": "Should the new constitution be amended to allow for a stronger central government?", "ne": "के नयाँ संविधानलाई बलियो केन्द्र सरकारको लागि संशोधन गर्नुपर्छ?" } },
-    { "summary": { "en": "China Relations", "ne": "चीन सम्बन्ध" }, "text": { "en": "Should Nepal cooperate more closely with China economically?", "ne": "के नेपालले चीनसँग आर्थिक रूपमा घनिष्ठ रूपमा सहकार्य गर्नुपर्छ?" } },
-    { "summary": { "en": "India Relations", "ne": "भारत सम्बन्ध" }, "text": { "en": "Should Nepal cooperate more closely with India economically?", "ne": "के नेपालले भारतसँग आर्थिक रूपमा घनिष्ठ रूपमा सहकार्य गर्नुपर्छ?" } },
-    { "summary": { "en": "Federalism", "ne": "संघीयता" }, "text": { "en": "Should federalism be maintained in Nepal?", "ne": "के नेपालमा संघीयता कायम राख्नुपर्छ?" } },
-    { "summary": { "en": "Monarchy", "ne": "राजतन्त्र" }, "text": { "en": "Should the idea of a monarchy be discussed again in Nepal?", "ne": "के नेपालमा राजतन्त्रको विचारलाई फेरि छलफल गर्नुपर्छ?" } },
-    { "summary": { "en": "Army Size", "ne": "सेनाको आकार" }, "text": { "en": "Should the army be reduced in size?", "ne": "के सेनाको आकार घटाउनुपर्छ?" } },
-    { "summary": { "en": "Local Elections", "ne": "स्थानीय निर्वाचन" }, "text": { "en": "Should the local election process be simplified?", "ne": "के स्थानीय निर्वाचन प्रक्रियालाई सरलीकृत गर्नुपर्छ?" } },
-    { "summary": { "en": "Welfare System", "ne": "कल्याणकारी प्रणाली" }, "text": { "en": "Should there be a general social system with a minimum income?", "ne": "के न्यूनतम आयसहितको सामान्य सामाजिक प्रणाली हुनुपर्छ?" } },
-    { "summary": { "en": "Tourism", "ne": "पर्यटन" }, "text": { "en": "Should tourism be more strongly promoted by the state?", "ne": "के राज्यले पर्यटनलाई थप जोडदार रूपमा बढावा दिनुपर्छ?" } },
-    { "summary": { "en": "Media Regulation", "ne": "सञ्चार नियमन" }, "text": { "en": "Should access to private media be more strictly regulated?", "ne": "के निजी मिडियामा पहुँचलाई थप कडाइका साथ नियमन गर्नुपर्छ?" } },
-    { "summary": { "en": "Religious Influence", "ne": "धार्मिक प्रभाव" }, "text": { "en": "Should the influence of religious groups on politics be reduced?", "ne": "के राजनीतिमा धार्मिक समूहहरूको प्रभाव कम गर्नुपर्छ?" } },
-    { "summary": { "en": "Environmental Regulations", "ne": "वातावरणीय नियमहरू" }, "text": { "en": "Should there be stricter environmental regulations for businesses?", "ne": "के व्यवसायका लागि थप कडा वातावरणीय नियमहरू हुनुपर्छ?" } },
-    { "summary": { "en": "Renewable Energies", "ne": "नवीकरणीय उर्जाहरू" }, "text": { "en": "Should the use of renewable energies become mandatory?", "ne": "के नवीकरणीय उर्जाहरूको प्रयोग अनिवार्य गर्नुपर्छ?" } },
+    { "summary": "Constitution", "text": "Should the new constitution be amended to allow for a stronger central government?" },
+    { "summary": "China Relations", "text": "Should Nepal cooperate more closely with China economically?" },
+    { "summary": "India Relations", "text": "Should Nepal cooperate more closely with India economically?" },
+    { "summary": "Federalism", "text": "Should federalism be maintained in Nepal?" },
+    { "summary": "Monarchy", "text": "Should the idea of a monarchy be discussed again in Nepal?" },
+    { "summary": "Army Size", "text": "Should the army be reduced in size?" },
+    { "summary": "Local Elections", "text": "Should the local election process be simplified?" },
+    { "summary": "Welfare System", "text": "Should there be a general social system with a minimum income?" },
+    { "summary": "Tourism", "text": "Should tourism be more strongly promoted by the state?" },
+    { "summary": "Media Regulation", "text": "Should access to private media be more strictly regulated?" },
+    { "summary": "Religious Influence", "text": "Should the influence of religious groups on politics be reduced?" },
+    { "summary": "Environmental Regulations", "text": "Should there be stricter environmental regulations for businesses?" },
+    { "summary": "Renewable Energies", "text": "Should the use of renewable energies become mandatory?" },
     { "summary": "Infrastructure", "text": "Should there be more state investment in infrastructure?" },
     { "summary": "Free Education", "text": "Should education from primary school onwards be free?" },
     { "summary": "Subsidized Health", "text": "Should the health system be more strongly subsidized?" },
@@ -22,55 +22,20 @@ const questions = [
 ];
 
 const parties = {
-    "Nepali Congress (NC)": {
-        "Constitution": {
-            "en": "disagree",
-            "ne": "असहमत"
-        },
-        "China Relations": {
-            "en": "neutral",
-            "ne": "तटस्थ"
-        },
-        "India Relations": {
-            "en": "agree",
-            "ne": "सहमत"
-        },
-        "Federalism": {
-            "en": "agree",
-            "ne": "सहमत"
-        },
-        "Monarchy": {
-            "en": "disagree",
-            "ne": "असहमत"
-        },
-        "Army Size": {
-            "en": "neutral",
-            "ne": "तटस्थ"
-        },
-        "Local Elections": {
-            "en": "agree",
-            "ne": "सहमत"
-        },
-        "Welfare System": {
-            "en": "agree",
-            "ne": "सहमत"
-        },
-        "Tourism": {
-            "en": "agree",
-            "ne": "सहमत"
-        },
-        "Media Regulation": {
-            "en": "disagree",
-            "ne": "असहमत"
-        },
-        "Religious Influence": {
-            "en": "agree",
-            "ne": "सहमत"
-        },
-        "Environmental Regulations": {
-            "en": "agree",
-            "ne": "सहमत"
-        },
-        "Renewable Energies": {
-            "en": "agree",
-            "ne": "सहमत"
+    "Nepali Congress (NC)": { "Constitution": "disagree", "China Relations": "neutral", "India Relations": "agree", "Federalism": "agree", "Monarchy": "disagree", "Army Size": "neutral", "Local Elections": "agree", "Welfare System": "agree", "Tourism": "agree", "Media Regulation": "disagree", "Religious Influence": "agree", "Environmental Regulations": "agree", "Renewable Energies": "agree", "Infrastructure": "agree", "Free Education": "agree", "Subsidized Health": "agree", "Foreign NGO Influence": "neutral", "Voting Age": "neutral", "Corruption Punishment": "agree", "Women in Politics": "agree" },
+    "CPN-UML": { "Constitution": "agree", "China Relations": "agree", "India Relations": "neutral", "Federalism": "disagree", "Monarchy": "disagree", "Army Size": "disagree", "Local Elections": "agree", "Welfare System": "neutral", "Tourism": "agree", "Media Regulation": "agree", "Religious Influence": "agree", "Environmental Regulations": "neutral", "Renewable Energies": "agree", "Infrastructure": "agree", "Free Education": "agree", "Subsidized Health": "neutral", "Foreign NGO Influence": "agree", "Voting Age": "disagree", "Corruption Punishment": "agree", "Women in Politics": "disagree" },
+    "CPN-MC": { "Constitution": "agree", "China Relations": "agree", "India Relations": "disagree", "Federalism": "agree", "Monarchy": "disagree", "Army Size": "agree", "Local Elections": "agree", "Welfare System": "agree", "Tourism": "agree", "Media Regulation": "agree", "Religious Influence": "agree", "Environmental Regulations": "agree", "Renewable Energies": "agree", "Infrastructure": "agree", "Free Education": "agree", "Subsidized Health": "agree", "Foreign NGO Influence": "agree", "Voting Age": "agree", "Corruption Punishment": "agree", "Women in Politics": "agree" },
+    "RSP": { "Constitution": "neutral", "China Relations": "disagree", "India Relations": "agree", "Federalism": "neutral", "Monarchy": "neutral", "Army Size": "agree", "Local Elections": "agree", "Welfare System": "disagree", "Tourism": "agree", "Media Regulation": "disagree", "Religious Influence": "neutral", "Environmental Regulations": "neutral", "Renewable Energies": "agree", "Infrastructure": "agree", "Free Education": "agree", "Subsidized Health": "neutral", "Foreign NGO Influence": "agree", "Voting Age": "agree", "Corruption Punishment": "agree", "Women in Politics": "neutral" },
+    "RPP": { "Constitution": "agree", "China Relations": "disagree", "India Relations": "agree", "Federalism": "disagree", "Monarchy": "agree", "Army Size": "disagree", "Local Elections": "neutral", "Welfare System": "disagree", "Tourism": "agree", "Media Regulation": "agree", "Religious Influence": "disagree", "Environmental Regulations": "disagree", "Renewable Energies": "disagree", "Infrastructure": "agree", "Free Education": "agree", "Subsidized Health": "disagree", "Foreign NGO Influence": "agree", "Voting Age": "disagree", "Corruption Punishment": "agree", "Women in Politics": "disagree" }
+};
+
+let currentQuestion = 0;
+let answers = [];
+
+function startQuiz() {
+    document.getElementById("landingPage").style.display = "none";
+    document.getElementById("quizPage").style.display = "block";
+    showQuestion();
+}
+
+function showQuestion()
